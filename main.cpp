@@ -38,7 +38,17 @@ int main()
     std::string cmd_of_mkdir_lib_inc;
     std::string cmd_of_mkdir_lib_src;
 
-    std::cout << "Please drag the project folder inside:" << std::endl;
+#ifdef _WIN32
+    system("cls");
+#else
+    system("clear");
+#endif
+
+    std::cout << "Mbed Project Generator" << std::endl
+              << "Written by Shichen Peng @ Glasgow College UESTC" << std::endl
+              << "For Microelectronic System Course Use Only" << std::endl << std::endl<< std::endl;
+
+    std::cout << "Please create a new project folder.\nDrag your project folder inside:" << std::endl;
     std::cin >> target_path;
     std::cout << std::endl << std::endl << std::endl;
 
