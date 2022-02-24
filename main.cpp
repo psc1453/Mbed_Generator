@@ -1,9 +1,9 @@
 #include <iostream>
 #include <fstream>
-#include "replace.h"
-#include "main_template.h"
-#include "cmake_template.h"
-#include "wait_template.h"
+#include "src/replace.h"
+#include "template_files/main_template.h"
+#include "template_files/cmake_template.h"
+#include "template_files/wait_template.h"
 
 #ifdef _WIN32
 

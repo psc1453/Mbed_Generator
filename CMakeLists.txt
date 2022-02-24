@@ -7,5 +7,5 @@ if(WIN32)
     set(CMAKE_EXE_LINKER_FLAGS -static)
 endif()
 
-add_executable(Mbed_Generator main.cpp main_template.h cmake_template.h replace.cpp replace.h wait_template.h)
+add_executable(Mbed_Generator main.cpp template_files/main_template.h template_files/cmake_template.h src/replace.cpp src/replace.h template_files/wait_template.h)
 
