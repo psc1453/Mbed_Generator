@@ -18,7 +18,8 @@ int main()
     // Initialise the digital pin LED1 as an output
     DigitalOut led(LED1);
 
-    while (true) {
+    while (true)
+    {
         led = !led;
         wait_ms(500);
     }
